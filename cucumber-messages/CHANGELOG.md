@@ -5,9 +5,13 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ----
-## [Unreleased]
+## [In Git] - (Not released)
 
 ### Added
+
+* Add testResult to the TestCaseFinished message
+  ([#488](https://github.com/cucumber/cucumber/pull/488)
+   [brasmusson])
 
 ### Changed
 
@@ -17,30 +21,34 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Fixed
 
-## [1.1.0] - (2018-09-30)
+## [2.0.0] - 2018-10-14
 
 ### Added
 
-* TestHookStarted & TestHookFinished messages to distinguish between messages about Gherkin steps and hooks
+* Several messages to support [cucumber-engine]()
+  ([#502](https://github.com/cucumber/cucumber/pull/502)
+   [charlierudolph])
 
-### Changed
+## [1.1.2] - 2018-10-01
 
-### Deprecated
+### Added
 
-### Removed
+* Added `TestHookStarted` and `TestHookFinished` to distinguish between messages about Gherkin steps and hooks
+  ([aslakhellesoy]) 
 
-### Fixed
-
-## [1.0.0] - (2018-09-15)
+## [1.0.0] - 2018-09-15
 
 ### Added
 
 * Protobuf messages for Go, Java, JavaScript, TypeScript and Ruby
 
 <!-- Releases -->
-[Unreleased]: https://github.com/cucumber/cucumber/compare/messages-v1.1.0...master
-[1.1.0]:      https://github.com/cucumber/cucumber/compare/messages-v1.0.0...v1.1.0
-[1.0.0]:      https://github.com/cucumber/cucumber/releases/tag/messages-v1.0.0
+[Unreleased]: https://github.com/cucumber/cucumber/compare/cucumber-messages/v2.0.0...master
+[2.0.0]:      https://github.com/cucumber/cucumber/compare/cucumber-messages/v1.1.2...v2.0.0
+[1.1.2]:      https://github.com/cucumber/cucumber/compare/cucumber-messages-v1.0.0...cucumber-messages/v1.1.2
+[1.0.0]:      https://github.com/cucumber/cucumber/releases/tag/cucumber-messages-v1.0.0
 
 <!-- Contributors in alphabetical order -->
 [aslakhellesoy]:    https://github.com/aslakhellesoy
+[brasmusson]:       https://github.com/brasmusson
+[charlierudolph]:   https://github.com/charlierudolph
